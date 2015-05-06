@@ -1,5 +1,5 @@
 %!PS-Adobe-3.0
-%%Creator: diveplot by cramer@dolphins.ch
+%%Creator: diveplot by cramer@freestone.net
 %%Orientation: Portrait
 %%Pages: 1
 %%PageOrder: Ascend
@@ -10,6 +10,23 @@
 %%BeginProlog
 /mm {72 mul 25.4 div} def
 %%EndProlog
+
+/subscript {
+  /Helvetica findfont 2 mm scalefont setfont
+  0 mm -0.7 mm rmoveto
+  show
+} def
+
+/checkbox {
+newpath
+0.5 setlinewidth 
+-0.5 mm -0.5 mm moveto
+2.5 mm -0.5 mm lineto
+2.5 mm 2.5 mm lineto
+-0.5 mm 2.5 mm lineto
+closepath
+stroke
+} def
 
 /pagepart {
 
@@ -157,6 +174,7 @@ setfont
 5.5 mm 86 mm moveto
 (Water min.) show
 
+% Temperature Boxes
 newpath
 5 mm 104 mm moveto
 33 mm 104 mm lineto
@@ -171,28 +189,30 @@ closepath
 33 mm 90 mm lineto
 stroke
 
+
+% Visibility Boxes
 newpath
 35 mm 104 mm moveto
 80 mm 104 mm lineto
-35 mm 100 mm moveto
-80 mm 100 mm lineto
-35 mm 92 mm moveto
-80 mm 92 mm lineto
+35 mm 101 mm moveto
+80 mm 101 mm lineto
+35 mm 95 mm moveto
+80 mm 95 mm lineto
 stroke
 
-36.5 mm 101 mm moveto (0-5m) show
-45.2 mm 101 mm moveto (5-10m) show
-53.5 mm 101 mm moveto (10-20m) show
-62.5 mm 101 mm moveto (20-30m) show
-71.6 mm 101 mm moveto (30-40m) show
+36.5 mm 102 mm moveto (0-5m) show
+45.2 mm 102 mm moveto (5-10m) show
+53.5 mm 102 mm moveto (10-20m) show
+62.5 mm 102 mm moveto (20-30m) show
+71.6 mm 102 mm moveto (30-40m) show
 
 newpath
-35 mm 104 mm moveto 35 mm 92 mm lineto
-44 mm 104 mm moveto 44 mm 92 mm lineto
-53 mm 104 mm moveto 53 mm 92 mm lineto
-62 mm 104 mm moveto 62 mm 92 mm lineto
-71 mm 104 mm moveto 71 mm 92 mm lineto
-80 mm 104 mm moveto 80 mm 92 mm lineto
+35 mm 104 mm moveto 35 mm 95 mm lineto
+44 mm 104 mm moveto 44 mm 95 mm lineto
+53 mm 104 mm moveto 53 mm 95 mm lineto
+62 mm 104 mm moveto 62 mm 95 mm lineto
+71 mm 104 mm moveto 71 mm 95 mm lineto
+80 mm 104 mm moveto 80 mm 95 mm lineto
 stroke
 
 newpath
@@ -203,6 +223,41 @@ newpath
 closepath
 stroke
 
+81 mm 102 mm moveto (-4 very bad) show
+81 mm 99 mm moveto (0 ok) show
+81 mm 96 mm moveto (+4 glass clear) show
+
+% Nitrox Box
+newpath
+35 mm 93 mm moveto 80 mm 93 mm lineto
+80 mm 85 mm lineto
+35 mm 85 mm lineto
+closepath
+stroke
+
+/Helvetica findfont
+3 mm scalefont
+setfont
+
+36 mm 88 mm moveto (Air) show
+gsave   
+42 mm 88 mm translate
+checkbox
+grestore
+47 mm 88 mm moveto (Nitrox) show
+gsave   
+57 mm 88 mm translate
+checkbox
+grestore
+
+72 mm 88 mm moveto (% O) show
+(2) subscript
+
+newpath
+46 mm 93 mm moveto 46 mm 85 mm lineto
+stroke
+
+% Description grid
 0.25 setlinewidth
 0.5 setgray
 newpath
@@ -219,10 +274,8 @@ stroke
 1.8 mm scalefont
 setfont
 
-81 mm 100 mm moveto (-4 very bad) show
-81 mm 97 mm moveto (0 ok) show
-81 mm 94 mm moveto (+4 glass clear) show
 
+% Units
 /Helvetica findfont
 3.5 mm scalefont
 setfont
@@ -249,6 +302,7 @@ setfont
 1.6 mm scalefont
 setfont
 
+% Copyright
 5 mm 5 mm moveto
 (\343) show
 
@@ -256,11 +310,11 @@ setfont
 1.6 mm scalefont
 setfont
 
-( 2001 Matthias Cramer, cramer@freestone.net) show
+( 2001-2015 Matthias Cramer, cramer@freestone.net) show
 
 } def
 
-% /pagelevel save def
+% print 4 sheets on two pages
 
 gsave
 8 mm 148 mm translate
