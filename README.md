@@ -1,7 +1,7 @@
 # DiveLog
 Divers Logbook Pages 
 
-This are Diver Logbook pages for printout on paper. The Pages are designed in raw PostScript.
+This are Diver Logbook pages for printout on DIN A4 paper and the Cut to DIN A6. The Pages are designed in raw PostScript.
 Varius versions of the Pages are provided as Postscript and PDF files
 
 ## Logbook detail pages
