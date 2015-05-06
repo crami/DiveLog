@@ -6,6 +6,8 @@ Varius versions of the Pages are provided as Postscript and PDF files
 
 ## Logbook detail pages
 
+|Filename|Description|
+|--------|-----------|
 |divelog.ps|Original Postscript File|
 |divelog.pdf|Converted PDF File|
 |divelog-norm.ps|Normalized Postscript File|
@@ -14,6 +16,8 @@ Varius versions of the Pages are provided as Postscript and PDF files
 
 ## Loogbook index pages
 
+|Filename|Description|
+|--------|-----------|
 |diveindex.ps|Original Postscript File|
 |diveindex.pdf|Converted PDF File|
 |diveindex-norm.ps|Normalized Postscript File|
